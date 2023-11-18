@@ -12,7 +12,7 @@ export const theme = createTheme({
     components: {
         MuiContainer: {
             defaultProps: {
-                maxWidth: "lg"
+                maxWidth: "xl"
             }
         },
         MuiButton: {
