@@ -6,15 +6,14 @@ import Typography from '@mui/material/Typography';
 import { Box, IconButton, useTheme } from '@mui/material';
 import AddIcon from '@mui/icons-material/Add'
 
-const CreativeCard = () => {
+const CreativeCard = ({ image }) => {
 
     const theme = useTheme()
     return (
         <Card sx={{ maxWidth: 345, p: 2, borderRadius: "10px", minWidth: '345px' }}>
             <CardMedia
                 sx={{ height: 190, borderRadius: "10px" }}
-                image="https://images.unsplash.com/photo-1682687220198-88e9bdea9931?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                title="green iguana"
+                image={image}
 
             />
             <CardContent sx={{ p: 0, pt: 4, '&:last-child': { pb: 0 }, display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
