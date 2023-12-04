@@ -1,7 +1,8 @@
-import { Box, IconButton, Tab, Tabs } from '@mui/material';
+import { Box, Grid, IconButton, Tab, Tabs } from '@mui/material';
 import React, { useState } from 'react';
 import SectionTitle from '../../../components/SectionTitle/SectionTitle';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack'
+import CreativeCard from '../../../components/CreativeCard/CreativeCard';
 
 const OurWorks = () => {
     const [value, setValue] = useState()
@@ -63,6 +64,12 @@ const OurWorks = () => {
                     </Box>
                 </Box>
             </Box>
+            {/* card section */}
+            <CreativeCard />
+
+            <Grid container>
+
+            </Grid>
 
 
 
